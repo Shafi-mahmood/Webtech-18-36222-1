@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Tech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color:rgb(100, 68, 214);"> 
+
+<h3 style="color:rgb(106, 255, 77)">Confirm Details & Sign Agreement</h3><br>
+
+<form onsubmit="return validateForm()" method="post" required>
+    <label for="fname">First Name<mark style="color:red">*</mark></label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+
+    <label for="lname">Last Name<mark style="color:red">*</mark></label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+    
+    <label for="birthday">Birthday:<mark style="color:red">*</mark></label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+
+    <label for="adds">Address:<mark style="color:red">*</mark></label><br>
+    <input type="text" id="adds" name="adds" placeholder="Address.."><br><br>
+
+    <label for="country">Country<mark style="color:red">*</mark></label><br>
+    <select id="country" name="country"><br>
+      <option value="sltCountry" selected>Select Country</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select><br><br>
+
+    <label for="city">City<mark style="color:red">*</mark></label><br>
+    <input type="text" id="city" name="cityName" placeholder="City"><br><br>
+
+    <label for="state">State/Region<mark style="color:red">*</mark></label><br>
+    <select id="state" name="stateN"><br>
+      <option value="sltState" selected>Select State/Region</option>
+      <option value="texas">Texas</option>
+      <option value="florida">Florida</option>
+      <option value="delhi">Delhi</option>
+    </select><br><br>
+
+    <label for="zip">zip code<mark style="color:red">*</mark></label><br>
+    <input type="text" id="zip" name="zip" placeholder="Your name.."><br><br>
+
+    <label for="gender">Gender</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label for="phone">Mobile Number:<mark style="color:red">*</mark></label>
+      <select id="codeN" name="code">
+        <option value="sltCode" selected>Select Code</option>
+        <option value="as">+61</option>
+        <option value="bd">+880</option>
+        <option value="jp">+81</option>
+        <option value="gr">+49</option>
+      </select>
+      <input type="tel" id="phone" name="phoneN" placeholder="Phone Number.." required><br><br>
+    
+    <label for="email">Enter your email:<mark style="color:red">*</mark></label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Comment</label><br>
+    <textarea name="message" rows="5" cols="30" placeholder="Write something.."></textarea><br><br>
+
+    <input type="checkbox" id="tp" name="tp" value=0>
+    <label for="tp"> I agree to the <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</label><br>
+    <input type="checkbox" id="pp" name="pp" value=0>
+    <label for="pp"> I have read and agree to the <a href="#" style="color:dodgerblue">Privacy & Policy</a>.</label><br><br>
+
+    <input type="reset" value="Reset">
+    <button type="submit" value="OK">Submit</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
